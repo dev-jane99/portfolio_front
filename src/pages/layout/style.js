@@ -24,7 +24,7 @@ const S = {}
         margin-right: 20px;
         
         & img {
-            height: 40px;
+            height: 60px;
         }
     `;
 
@@ -39,8 +39,9 @@ const S = {}
         flex-direction: row;
         width: 450px;
         & li {
-            justify-content: gap-between;
+            justify-content: center;
             gap: 97px;
+            list-style: none;
         }
     `;
 
