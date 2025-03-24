@@ -5,14 +5,12 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
     return (
-        <div>
-        <S.Layout>
-            <Header />
-            <S.Content>
-                <Outlet />
-            </S.Content>
-        </S.Layout>
-        </div>
+    <S.Layout>
+        <Header />
+        <S.Content>
+            <Outlet />
+        </S.Content>
+    </S.Layout>
     );
 };
 export default Layout;

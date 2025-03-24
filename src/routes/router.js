@@ -1,8 +1,9 @@
 import {createBrowserRouter} from 'react-router-dom'
 import Layout from "../pages/layout/Layout"
-import About from '../pages/about/About'
+import About from '../pages/about/AboutContainer'
 import NotFound from '../pages/NotFound'
-import Home from '../pages/home/Home'
+// import Home from '../pages/home/Home'
+import PortfolioContainer from '../pages/portfolio/PortfolioContainer';
 
 const router = createBrowserRouter([
     {
@@ -11,11 +12,15 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Home />
+                element: <About />
             },
             {
                 path: '/about',
                 element: <About />
+            },
+            {
+                path: '/portfolio',
+                element: <PortfolioContainer />
             },
         ]
     },
