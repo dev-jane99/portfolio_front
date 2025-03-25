@@ -1,11 +1,14 @@
 import React from 'react';
-import {Outlet} from "react-router-dom";
 import Footer from '../layout/Footer';
+import S from './style';
+import { Outlet } from 'react-router-dom';
 
 const PortfolioContainer = () => {
   return (
     <div>
-        <Outlet />
+        <S.Projects>
+              <Outlet />
+        </S.Projects>
         <Footer />
     </div>
   );

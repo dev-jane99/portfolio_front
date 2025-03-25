@@ -1,9 +1,11 @@
 import {createBrowserRouter} from 'react-router-dom'
 import Layout from "../pages/layout/Layout"
-import About from '../pages/about/AboutContainer'
+import About from '../pages/about/About'
 import NotFound from '../pages/NotFound'
-// import Home from '../pages/home/Home'
 import PortfolioContainer from '../pages/portfolio/PortfolioContainer';
+import StudyContainer from '../pages/study/StudyContainer';
+import Projects from '../pages/portfolio/Projects';
+import Powpow from '../pages/portfolio/Powpow';
 
 const router = createBrowserRouter([
     {
@@ -20,7 +22,21 @@ const router = createBrowserRouter([
             },
             {
                 path: '/portfolio',
-                element: <PortfolioContainer />
+                element: <PortfolioContainer />,
+                children: [
+                    { 
+                        index: true, 
+                        element: <Projects /> 
+                    }, 
+                    { 
+                        path: "/powpow", 
+                        element: <Powpow /> 
+                    }, 
+                ]
+            },
+            {
+                path: '/study',
+                element: <StudyContainer />
             },
         ]
     },
