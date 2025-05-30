@@ -7,9 +7,7 @@ const Layout = () => {
     return (
     <S.Layout>
         <Header />
-        <S.Content>
             <Outlet />
-        </S.Content>
     </S.Layout>
     );
 };

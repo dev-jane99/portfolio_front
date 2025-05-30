@@ -2,10 +2,16 @@ import {createBrowserRouter} from 'react-router-dom'
 import Layout from "../pages/layout/Layout"
 import About from '../pages/about/About'
 import NotFound from '../pages/NotFound'
-import PortfolioContainer from '../pages/portfolio/PortfolioContainer';
+import PortfolioContainer from '../pages/project/PortfolioContainer';
 import StudyContainer from '../pages/study/StudyContainer';
-import Projects from '../pages/portfolio/Projects';
-import Powpow from '../pages/portfolio/Powpow';
+import Projects from '../pages/project/Projects';
+import Powpow from '../pages/project/Powpow';
+import Cooing from '../pages/project/Cooing';
+import Portfolio2025 from '../pages/project/Portfolio2025';
+import NewPost from '../pages/study/NewPost';
+import StudyListPage from '../pages/study/StudyListPage';
+import StudyDetail from '../pages/study/StudyDetail';
+import UpdatePost from '../pages/study/UpdatePost';
 
 const router = createBrowserRouter([
     {
@@ -21,7 +27,7 @@ const router = createBrowserRouter([
                 element: <About />
             },
             {
-                path: '/portfolio',
+                path: '/project',
                 element: <PortfolioContainer />,
                 children: [
                     { 
@@ -29,14 +35,40 @@ const router = createBrowserRouter([
                         element: <Projects /> 
                     }, 
                     { 
-                        path: "/powpow", 
+                        path: "powpow", 
                         element: <Powpow /> 
+                    }, 
+                    { 
+                        path: "cooing", 
+                        element: <Cooing /> 
+                    }, 
+                    { 
+                        path: "portfolio2025", 
+                        element: <Portfolio2025 /> 
                     }, 
                 ]
             },
             {
                 path: '/study',
-                element: <StudyContainer />
+                element: <StudyContainer />,
+                children: [
+                    {
+                        index: true,
+                        element: <StudyListPage />
+                    },
+                    {
+                        path: "upload",
+                        element: <NewPost />
+                    },
+                    {
+                        path: ':id',
+                        element: <StudyDetail />
+                    },
+                    {
+                        path: "edit/:id",
+                        element: <UpdatePost />
+                    }
+                ]
             },
         ]
     },

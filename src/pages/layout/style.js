@@ -3,42 +3,35 @@ import styled from "styled-components";
 const S = {};
 
 
+
 S.Layout = styled.div`
     display: flex;
     flex-direction: column;
+    // align-items: center;
+    justify-content: center;
     min-height: 100vh;
     // background: linear-gradient(#796465, #DFB9B9);
+    overflow-x: hidden;
     font-family: "League Spartan";
     position: relative; 
     scroll-behavior: smooth;
-`;
-
-S.Content = styled.div`
-    flex-grow: 1; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
-    margin-bottom: 60px;
-    width: 100%;
-    max-width: 1440px; 
-    margin-left: auto; 
-    margin-right: auto;
-    box-sizing: border-box;
-`;
+    background: #000000;
+`
 
 S.Header = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: #ffffff;
+    // background: #ffffff;
+    background: #000000;
     padding: 15px 20px;  
     position: fixed;  
     top: 0;
     left: 0;
     z-index: 100;
     box-sizing: border-box; 
+    transition: all 0.3s ease-in-out;
     
     @media (max-width: 1200px) {
         flex-direction: column;
@@ -46,8 +39,9 @@ S.Header = styled.header`
     }
         & > div, & > ul, & > button {
         flex-shrink: 0;
+        transition: all 0.3s ease-in-out;
     }
-`;
+`
 
 S.Logo = styled.div`
     display: flex;
@@ -81,11 +75,12 @@ S.MainMenu = styled.ul`
         white-space: nowrap;
         
         & a {
-            color: #000000;
+            color: #ffffff;
             text-decoration: none;
             
             &:hover {
-                text-decoration: underline;
+                // text-decoration: underline;
+                text-decoration: #919191 wavy underline;
             }
         }
     }
@@ -163,7 +158,7 @@ S.PopupClose = styled.button`
 
 S.PopupTitle = styled.h3`
     margin: 0 0 20px 0;
-    color: #796465;
+    color: #989898;
     font-size: 18px;
     font-weight: bold;
 `;
@@ -219,7 +214,7 @@ S.Footer = styled.footer`
     bottom: 0;
     left: 0;
     box-sizing: border-box;
-    background: #ffffff;
+    background: #000000;
 `;
 
 S.Sns = styled.div`
@@ -296,7 +291,7 @@ S.FooterInfo = styled.div`
     & p {
         font-size: 9px;
         text-align: center;
-        color: #000000;
+        color: #ffffff;
         margin: 0;
         max-width: 100%; 
         white-space: normal; 

@@ -44,7 +44,7 @@ const Footer = () => {
         ))}
       </S.Sns>
       <S.BottomLogo>
-        <img src={process.env.PUBLIC_URL + "/assets/logo.svg"} alt="logo" />
+        <img src={process.env.PUBLIC_URL + "/assets/logo_white.svg"} alt="logo" />
       </S.BottomLogo>
       <S.FooterInfo>
         <p>Portfolio purpose</p>
