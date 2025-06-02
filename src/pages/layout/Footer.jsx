@@ -8,7 +8,7 @@ const Footer = () => {
   // SNS info 
   const snsData = [
     { id: 'linkedin', url: 'https://www.linkedin.com/in/jane-ryo', display: 'Jane Ryo' },
-    { id: 'notion', url: 'https://spice-geography-ce1.notion.site/1669b8638a5a80c18b8aefcf4745da35', display: 'notion portfolio' },
+    // { id: 'notion', url: 'https://spice-geography-ce1.notion.site/1669b8638a5a80c18b8aefcf4745da35', display: 'notion portfolio' },
     { id: 'github', url: 'https://github.com/dev-jane99', display: 'https://github.com/dev-jane99' }
   ];
   
