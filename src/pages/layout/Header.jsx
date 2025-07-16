@@ -26,7 +26,7 @@ const Header = () => {
             <S.MainMenu>
                 <li><Link to={"/about"}>ABOUT</Link></li>
                 <li><Link to={"/project"}>PROJECTS</Link></li>
-                <li><Link to={"/study"}>ARCHIVES</Link></li>
+                {/* <li><Link to={"/study"}>ARCHIVES</Link></li> */}
             </S.MainMenu>
             <S.Contact onClick={handleShowPopup}>
                 CONTACT ME!

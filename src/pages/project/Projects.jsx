@@ -15,7 +15,6 @@ const Projects = () => {
             <S.ProjectContent>
               POWPOW : Pet-themed online shopping platform integrated with a personality-based recommendation system.
             </S.ProjectContent>
-{/* 엑셀파일로 멤버들의 작업을 트레킹했던거 디테일 페이지에 추가하기 */}
             <S.ProjectDetails>
               <S.SectionTitle>Role</S.SectionTitle>
               <span>
@@ -107,9 +106,9 @@ const Projects = () => {
             <S.ProjectDetails>
               <S.SectionTitle>Tech Stack</S.SectionTitle>
               <ul>
-                <li><strong>Frontend:</strong> React, Context API</li>
-                <li><strong>Backend:</strong> Spring Boot, MySQL</li>
-                <li><strong>Tools:</strong> Swagger, GitHub, Figma, Tiptap Editor</li>
+                <li><strong>Frontend:</strong> React 19, React Router, Styled-components, Axios, Tiptap</li>
+                <li><strong>Backend:</strong> Spring Boot 3.4, MySQL, MyBatis</li>
+                <li><strong>Tools:</strong> Swagger, Lombok, GitHub, Figma</li>
 
               </ul>
             </S.ProjectDetails>
@@ -122,7 +121,7 @@ const Projects = () => {
               <ul>
                 <li>Auto-scrolling skill carousel</li>
                 <li>Animated transitions using Framer Motion</li>
-                <li>Responsive design across devices</li>
+                <li>Responsive design across different screen size</li>
                 <li>Project detail pages with routing</li>
                 <li>Blog system with Tiptap-based rich text editor</li>
               </ul>

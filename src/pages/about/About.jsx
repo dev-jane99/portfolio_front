@@ -4,7 +4,7 @@ import Footer from '../layout/Footer';
 
 const logos = [
   'css.svg', 'dbeaver.svg', 'eclipse.svg', 'figma.svg', 'intelij.svg',
-  'javascript.svg', 'linux.svg', 'nodejs.svg', 'oracle.svg', 'react.svg',
+  'javascript.svg', 'nodejs.svg', 'oracle.svg', 'react.svg',
   'springboot.png', 'spss.png', 'styledcomponent.svg', 'swagger.svg',
   'tomcat.svg', 'vscode.svg', 'java.svg', 'html.svg', 'mysql.svg',
   'github.svg', 'postman.svg'
