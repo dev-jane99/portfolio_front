@@ -7,7 +7,7 @@ const PortfolioContainer = () => {
   return (
     <div>
         <S.Projects>
-              <Outlet />
+          <Outlet />
         </S.Projects>
         <Footer />
     </div>

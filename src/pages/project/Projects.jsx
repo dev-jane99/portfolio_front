@@ -80,7 +80,7 @@ const Projects = () => {
             <S.ProjectDetails>
               <S.SectionTitle>Duration</S.SectionTitle>
               <ul>
-                <li>Personal Project, Ongoing (Apr 2025 – Present)</li>
+                <li>Personal Project, Ongoing (Apr 2025 – Jul 2025)</li>
               </ul>
             </S.ProjectDetails>
 

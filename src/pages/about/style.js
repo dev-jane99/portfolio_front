@@ -308,18 +308,46 @@ S.CertificateItem = styled.div`
 
   img {
     max-width: 100%;
-    height: auto;
+    height: 350px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
 
-  p {
-    font-size: 14px;
-    color: #333;
-    font-weight: 500;
+  .title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;   /* 제목과 설명 간격 통일 */
+  }
+
+  .desc {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
   }
 `;
+
+// S.CertificateItem = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   text-align: center;
+//   max-width: 250px;
+
+//   img {
+//     max-width: 100%;
+//     height: 350px;
+//     border-radius: 8px;
+//     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+//     margin-bottom: 8px;
+//   }
+
+//   p {
+//     font-size: 14px;
+//     color: #333;
+//     font-weight: 500;
+//   }
+// `;
 
 
 export default S

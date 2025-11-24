@@ -126,26 +126,66 @@ const About = () => {
 
             <S.BentoCard>
               <h2>Certificates & Recognition</h2>
-              <S.Certificates>
+              {/* <S.Certificates>
                 <S.CertificateItem>
                   <img src="/assets/about/sqld.jpg" alt="SQLD" />
                   <p>SQLD Certificate</p><br />
                   <p>Certified as SQL Developer (SQLD) by K-DATA on April 4, 2025</p>
                 </S.CertificateItem>
                 <S.CertificateItem>
-                  <img src="/assets/about/certificate1.png" alt="Certificate 1" />
+                  <img src="/assets/about/certificate1.jpg" alt="Certificate 1" />
                   <p>Completion - IT Academy</p>
                 </S.CertificateItem>
                 <S.CertificateItem>
-                  <img src="/assets/about/certificate2.png" alt="Certificate 2" />
+                  <img src="/assets/about/certificate2.jpg" alt="Certificate 2" />
                   <p>Perfect Attendance</p><br />
                   <p><strong>Training Period:</strong> July 23, 2024 - December 24, 2024 <br />
                   <strong>Total Attendance Hours/Days:</strong> 832 hours / 105 days <br />
                   <strong>Highlights:</strong> 0 instances of tardiness / early departures / absences achieved</p>
                 </S.CertificateItem>
                 <S.CertificateItem>
-                  <img src="/assets/about/certificate3.png" alt="Certificate 3" />
+                  <img src="/assets/about/certificate3.jpg" alt="Certificate 3" />
                   <p>Work Excellence Award</p>
+                  <p><strong>Training Period:</strong> July 23, 2024 - December 24, 2024 <br />
+                  <strong>Highlights:</strong> Project Manager / Main presentor</p>
+                </S.CertificateItem>
+              </S.Certificates> */}
+              <S.Certificates>
+                <S.CertificateItem>
+                  <img src="/assets/about/sqld.jpg" alt="SQLD" />
+                  <p className="title">SQLD Certificate</p>
+                  <p className="desc">
+                    Certified as SQL Developer (SQLD) by <br />
+                    K-DATA on April 4, 2025
+                  </p>
+                </S.CertificateItem>
+
+                <S.CertificateItem>
+                  <img src="/assets/about/certificate1.jpg" alt="Certificate 1" />
+                  <p className="title">Completion - IT Academy</p>
+                  <p className="desc">
+                   <strong>Training Period:</strong> July 23, 2024 - December 24, 2024 <br /> 
+                  </p> 
+                </S.CertificateItem>
+
+                <S.CertificateItem>
+                  <img src="/assets/about/certificate2.jpg" alt="Certificate 2" />
+                  <p className="title">Perfect Attendance</p>
+                  <p className="desc">
+                    <strong>Training Period:</strong> July 23, 2024 - December 24, 2024 <br />
+                    <strong>Total Attendance Hours/Days:</strong> 832 hours / 105 days <br />
+                    <strong>Highlights:</strong> 0 instances of tardiness / early departures /
+                    absences achieved
+                  </p>
+                </S.CertificateItem>
+
+                <S.CertificateItem>
+                  <img src="/assets/about/certificate3.jpg" alt="Certificate 3" />
+                  <p className="title">Work Excellence Award</p>
+                  <p className="desc">
+                    <strong>Training Period:</strong> July 23, 2024 - December 24, 2024 <br />
+                    <strong>Highlights:</strong> Project Manager / Main presentor
+                  </p>
                 </S.CertificateItem>
               </S.Certificates>
             </S.BentoCard>
