@@ -2,92 +2,57 @@ import React, { useState, useEffect, useCallback } from 'react'
 import S from './style';
 
 const Cooing = () => {
-const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const PUBLIC_URL = process.env.PUBLIC_URL || '';
   
   const slides = [
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide1.png",
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide1.png",
       alt: "Project Overview"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide2.png", 
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide2.png", 
       alt: "Key Features"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide3.png",
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide3.png",
       alt: "Project Overview"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide4.png", 
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide4.png", 
       alt: "Key Features"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide5.png",
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide5.png",
       alt: "Project Overview"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide6.png", 
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide6.png", 
       alt: "Key Features"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide7.png",
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide7.png",
       alt: "Project Overview"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide8.png", 
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide8.png", 
       alt: "Key Features"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide9.png",
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide9.png",
       alt: "Project Overview"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide10.png", 
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide10.png", 
       alt: "Key Features"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide11.png",
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide11.png",
       alt: "Project Overview"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide12.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide13.png",
-      alt: "Project Overview"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide14.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide15.png",
-      alt: "Project Overview"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide16.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide17.png",
-      alt: "Project Overview"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide18.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide19.png",
-      alt: "Project Overview"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide20.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide21.png", 
+      src: process.env.PUBLIC_URL + "../assets/cooing/slide12.png", 
       alt: "Key Features"
     },
   ];
@@ -174,7 +139,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               <S.TechBadge>React</S.TechBadge>
               <S.TechBadge>Java</S.TechBadge>
               <S.TechBadge>Node.js</S.TechBadge>
-              <S.TechBadge>Oracle SQL</S.TechBadge>
+              <S.TechBadge>mySQL</S.TechBadge>
               <S.TechBadge>html</S.TechBadge>
               <S.TechBadge>css</S.TechBadge>
               <S.TechBadge>JavaScript</S.TechBadge>
@@ -198,41 +163,55 @@ const [isModalOpen, setIsModalOpen] = useState(false);
         </S.ProjectDetailsGrid>
       </S.ProjectInfo>
       
-      <S.FeatureSection>
-        <S.FeatureTitle>Key Features</S.FeatureTitle>
-        <S.FeatureGrid>
-          <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-shopping-bag"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>Showcase</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Presenting the product features that cooing serve in classes</S.FeatureCardDesc>
-          </S.FeatureCard>
-          <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-social-network"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>SNS Features</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Post creation, likes, and comment functionality</S.FeatureCardDesc>
-          </S.FeatureCard>
-          <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-house-chimney"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>My Home</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Pet registration, post management, and purchase history</S.FeatureCardDesc>
-          </S.FeatureCard>
-          <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-credit-card"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>Payment/Delivery</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Integrated payment system and delivery management</S.FeatureCardDesc>
-          </S.FeatureCard>
-          <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-shop"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>Seller Service</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Product registration, order management, and sales analytics</S.FeatureCardDesc>
-          </S.FeatureCard>
-          <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-settings"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>Admin System</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Comprehensive service management and statistics</S.FeatureCardDesc>
-          </S.FeatureCard>
-        </S.FeatureGrid>
-      </S.FeatureSection>
+<S.FeatureSection>
+    <S.FeatureTitle>Key Features</S.FeatureTitle>
+    <S.FeatureGrid>
+      
+      {/* 1. Showcase (제품 진열) */}
+      <S.FeatureCard>
+        <S.FeatureIcon>
+          <img 
+            src={`${PUBLIC_URL}/assets/cooing/showcase.svg`} 
+            alt="Showcase Icon" 
+            style={{ width: '50px', height: '50px'}}/>
+        </S.FeatureIcon>
+        <S.FeatureCardTitle>Product Showcase</S.FeatureCardTitle>
+        <S.FeatureCardDesc>Interactive Product Showcase & Detail View</S.FeatureCardDesc>
+      </S.FeatureCard>
+      
+      {/* 2. About (브랜드 소개) */}
+      <S.FeatureCard>
+        <S.FeatureIcon>
+          <img 
+            src={`${PUBLIC_URL}/assets/cooing/about.svg`} 
+            alt="about Icon" 
+            style={{ width: '50px', height: '50px'}}/>
+        </S.FeatureIcon>
+        <S.FeatureCardTitle>Brand Story</S.FeatureCardTitle>
+        <S.FeatureCardDesc>Simple Brand Introduction & Vision Page</S.FeatureCardDesc>
+      </S.FeatureCard>
+      
+      {/* 3. Class Appointment (클래스 예약) */}
+      <S.FeatureCard>
+        <S.FeatureIcon>
+          <img 
+            src={`${PUBLIC_URL}/assets/cooing/calendar.svg`} 
+            alt="calendar Icon" 
+            style={{ width: '50px', height: '50px'}}/>
+        </S.FeatureIcon>
+        <S.FeatureCardTitle>Class Reservation</S.FeatureCardTitle>
+        <S.FeatureCardDesc>Real-time Class Announcement & Reservation System</S.FeatureCardDesc>
+      </S.FeatureCard>
+      
+      {/* 4. Admin System (관리자 시스템) */}
+      <S.FeatureCard>
+        <S.FeatureIcon><i className="fi fi-br-settings"></i></S.FeatureIcon>
+        <S.FeatureCardTitle>Admin Dashboard</S.FeatureCardTitle>
+        <S.FeatureCardDesc>Integrated Admin Dashboard for Service Management</S.FeatureCardDesc>
+      </S.FeatureCard>
+      
+    </S.FeatureGrid>
+</S.FeatureSection>
       
       <S.SlidesSection>
         <S.SlidesTitle>Project Presentation</S.SlidesTitle>

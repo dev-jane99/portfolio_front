@@ -4,92 +4,33 @@ import S from './style';
 const Portfolio2025 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  
+  const PUBLIC_URL = process.env.PUBLIC_URL || '';
+
   const slides = [
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide1.png",
+      src: process.env.PUBLIC_URL + "../assets/slide1.png",
       alt: "Project Overview"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide2.png", 
+      src: process.env.PUBLIC_URL + "../assets/slide2.png", 
       alt: "Key Features"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide3.png",
+      src: process.env.PUBLIC_URL + "../assets/slide3.png",
       alt: "Project Overview"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide4.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide5.png",
+      src: process.env.PUBLIC_URL + "../assets/slide4.png",
       alt: "Project Overview"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide6.png", 
+      src: process.env.PUBLIC_URL + "../assets/slide5.png", 
       alt: "Key Features"
     },
     {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide7.png",
+      src: process.env.PUBLIC_URL + "../assets/slide6.png",
       alt: "Project Overview"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide8.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide9.png",
-      alt: "Project Overview"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide10.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide11.png",
-      alt: "Project Overview"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide12.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide13.png",
-      alt: "Project Overview"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide14.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide15.png",
-      alt: "Project Overview"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide16.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide17.png",
-      alt: "Project Overview"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide18.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide19.png",
-      alt: "Project Overview"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide20.png", 
-      alt: "Key Features"
-    },
-    {
-      src: process.env.PUBLIC_URL + "../assets/powpow/slide21.png", 
-      alt: "Key Features"
-    },
+    }
   ];
 
   const openModal = (index) => {
@@ -111,7 +52,7 @@ const Portfolio2025 = () => {
     setCurrentSlideIndex((prev) => (prev - 1 + slides.length) % slides.length);
   }, [slides.length]);
 
-  // 키보드 이벤트 처리
+
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (!isModalOpen) return;
@@ -144,51 +85,47 @@ const Portfolio2025 = () => {
     <S.PowpowContainer>
       <S.Header>
         <S.Logo 
-          src={process.env.PUBLIC_URL + "../assets/powpow/powpow_logo_white.svg"} 
-          alt="powpow logo"
+          src={process.env.PUBLIC_URL + "../assets/logo_white.svg"} 
+          alt="jane logo"
         />
       </S.Header>
     
       <S.ProjectInfo>
-        <S.Brief>'pet'sonality test oriented shopping site</S.Brief>
+        <S.Brief>Web-Portfolio</S.Brief>
         
         <S.MainDescription>
-          A comprehensive platform that analyzes pet personality to recommend personalized products.
+            An application built using React to showcase professional resume, detailed project case studies, and technical skills through a clean, modern, and fully responsive user interface.
         </S.MainDescription>
     
         <S.ProjectDetailsGrid>
           <S.DetailCard>
             <S.DetailLabel>Duration</S.DetailLabel>
-            <S.DetailValue>2024.10 - 2024.12</S.DetailValue>
-            <S.DetailSubtext>3 months • Team Project</S.DetailSubtext>
+            <S.DetailValue>2025.07 - 2025.11</S.DetailValue>
+            <S.DetailSubtext>5 months • Personal Project</S.DetailSubtext>
           </S.DetailCard>
           
           <S.DetailCard>
             <S.DetailLabel>Tech Stack</S.DetailLabel>
             <S.TechStackContainer>
               <S.TechBadge>Git</S.TechBadge>
-              <S.TechBadge>SpringBoot</S.TechBadge>
               <S.TechBadge>React</S.TechBadge>
-              <S.TechBadge>Java</S.TechBadge>
-              <S.TechBadge>Node.js</S.TechBadge>
-              <S.TechBadge>Oracle SQL</S.TechBadge>
-              <S.TechBadge>html</S.TechBadge>
-              <S.TechBadge>css</S.TechBadge>
+              <S.TechBadge>HTML5</S.TechBadge>
+              <S.TechBadge>CSS3</S.TechBadge>
               <S.TechBadge>JavaScript</S.TechBadge>
               <S.TechBadge>Styled Components</S.TechBadge>
               <S.TechBadge>Figma</S.TechBadge>
-              <S.TechBadge>swagger</S.TechBadge>
+              <S.TechBadge>Responsive Design</S.TechBadge>
             </S.TechStackContainer>
           </S.DetailCard>
           
           <S.DetailCard>
             <S.DetailLabel>My Role</S.DetailLabel>
             <S.RoleContainer>
-              <S.RoleTitle>Team Leader / PM</S.RoleTitle>
+              <S.RoleTitle>Frontend Developer / Portfolio Creator</S.RoleTitle>
               <S.RoleList>
-                <S.RoleBullet>• Progress tracking & team coordination</S.RoleBullet>
-                <S.RoleBullet>• Full-stack development & design</S.RoleBullet>
-                <S.RoleBullet>• Deployment & presentation</S.RoleBullet>
+                <S.RoleBullet>• Full UI/UX design and wireframing for optimal presentation</S.RoleBullet>
+                <S.RoleBullet>• Component-based development using React for modularity</S.RoleBullet>
+                <S.RoleBullet>• Implemented responsive design across all major breakpoints</S.RoleBullet>
               </S.RoleList>
             </S.RoleContainer>
           </S.DetailCard>
@@ -196,43 +133,48 @@ const Portfolio2025 = () => {
       </S.ProjectInfo>
       
       <S.FeatureSection>
-        <S.FeatureTitle>Key Features</S.FeatureTitle>
+        <S.FeatureTitle>Key Portfolio Sections</S.FeatureTitle>
         <S.FeatureGrid>
           <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-shopping-bag"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>Shopping System</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Personalized product recommendations based on personality analysis</S.FeatureCardDesc>
+            <S.FeatureIcon><i className="fi fi-br-document"></i></S.FeatureIcon>
+            <S.FeatureCardTitle>Resume / CV Display</S.FeatureCardTitle>
+            <S.FeatureCardDesc>Dynamic, easily-digestible display of education, experience, and technical skills.</S.FeatureCardDesc>
           </S.FeatureCard>
           <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-social-network"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>SNS Features</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Post creation, likes, and comment functionality</S.FeatureCardDesc>
+            <S.FeatureIcon><i className="fi fi-br-briefcase"></i></S.FeatureIcon>
+            <S.FeatureCardTitle>Project Showcase</S.FeatureCardTitle>
+            <S.FeatureCardDesc>Categorized view of development projects with detailed case studies.</S.FeatureCardDesc>
           </S.FeatureCard>
           <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-house-chimney"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>My Home</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Pet registration, post management, and purchase history</S.FeatureCardDesc>
+            <S.FeatureIcon>          
+              <img 
+                src={`${PUBLIC_URL}/assets/certificate.svg`} 
+                alt="Showcase Icon" 
+                style={{ width: '50px', height: '50px'}}/>
+            </S.FeatureIcon>
+            <S.FeatureCardTitle>About Me & Skills</S.FeatureCardTitle>
+            <S.FeatureCardDesc>Visual representation of core competencies and professional background summary.</S.FeatureCardDesc>
           </S.FeatureCard>
           <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-credit-card"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>Payment/Delivery</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Integrated payment system and delivery management</S.FeatureCardDesc>
+            <S.FeatureIcon><i className="fi fi-br-link-alt"></i></S.FeatureIcon>
+            <S.FeatureCardTitle>Contact & Links</S.FeatureCardTitle>
+            <S.FeatureCardDesc>Centralized hub for GitHub, LinkedIn, and direct communication methods.</S.FeatureCardDesc>
           </S.FeatureCard>
           <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-shop"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>Seller Service</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Product registration, order management, and sales analytics</S.FeatureCardDesc>
+            <S.FeatureIcon><i className="fi fi-br-apps"></i></S.FeatureIcon>
+            <S.FeatureCardTitle>Interactive UI Elements</S.FeatureCardTitle>
+            <S.FeatureCardDesc>Custom loading states, animations, and transitions to enhance user engagement.</S.FeatureCardDesc>
           </S.FeatureCard>
           <S.FeatureCard>
-            <S.FeatureIcon><i className="fi fi-br-settings"></i></S.FeatureIcon>
-            <S.FeatureCardTitle>Admin System</S.FeatureCardTitle>
-            <S.FeatureCardDesc>Comprehensive service management and statistics</S.FeatureCardDesc>
+            <S.FeatureIcon><i className="fi fi-br-mobile"></i></S.FeatureIcon>
+            <S.FeatureCardTitle>Cross-Device Responsiveness</S.FeatureCardTitle>
+            <S.FeatureCardDesc>Pixel-perfect layout optimization for mobile, tablet, and desktop viewing.</S.FeatureCardDesc>
           </S.FeatureCard>
         </S.FeatureGrid>
       </S.FeatureSection>
       
       <S.SlidesSection>
-        <S.SlidesTitle>Project Presentation</S.SlidesTitle>
+        <S.SlidesTitle>Project Overview</S.SlidesTitle>
         <S.SlidesGrid>
           {slides.map((slide, index) => (
             <S.SlideContainer key={index} onClick={() => openModal(index)}>

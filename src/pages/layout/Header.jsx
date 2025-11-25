@@ -39,7 +39,7 @@ const Header = () => {
                 <S.PopupContent>
                     <S.ContactItem onClick={handleSendSMS}>
                         <S.ContactIcon src={process.env.PUBLIC_URL + "/assets/phone.svg"} alt="phone" />
-                        <S.ContactText>Mobile: (+82)010-9935-7301</S.ContactText>
+                        <S.ContactText>Mobile: (+81)090-6291-7273</S.ContactText>
                     </S.ContactItem>
                     <S.ContactItem onClick={handleSendEmail}>
                         <S.ContactIcon src={process.env.PUBLIC_URL + "/assets/message.svg"} alt="phone" />

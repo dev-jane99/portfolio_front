@@ -80,7 +80,7 @@ const Projects = () => {
             <S.ProjectDetails>
               <S.SectionTitle>Duration</S.SectionTitle>
               <ul>
-                <li>Personal Project, Ongoing (Apr 2025 – Jul 2025)</li>
+                <li>Personal Project / Apr 2025 – Jul 2025</li>
               </ul>
             </S.ProjectDetails>
 
@@ -101,20 +101,15 @@ const Projects = () => {
             <S.ProjectContent>JANE : Portfolio website</S.ProjectContent>
             <S.ProjectDetails>
               <S.SectionTitle>Role</S.SectionTitle>
-              <span>Full Project Planning / Design / Development / Deployment</span>
+              <span>Full Project Planning / Design / Development</span>
             </S.ProjectDetails>
             <S.ProjectDetails>
               <S.SectionTitle>Tech Stack</S.SectionTitle>
               <ul>
-                <li><strong>Frontend:</strong> React 19, React Router, Styled-components, Axios, Tiptap</li>
-                <li><strong>Backend:</strong> Spring Boot 3.4, MySQL, MyBatis</li>
-                <li><strong>Tools:</strong> Swagger, Lombok, GitHub, Figma</li>
+                <li><strong>Frontend:</strong> React, React Router, Styled-components, HTML, CSS</li>
+                <li><strong>Tools:</strong>GitHub, Figma</li>
 
               </ul>
-            </S.ProjectDetails>
-            <S.ProjectDetails>
-              <S.SectionTitle>Duration</S.SectionTitle>
-              <ul><li>Personal Project, 3 months duration</li></ul>
             </S.ProjectDetails>
             <S.ProjectDetails>
               <S.SectionTitle>Features</S.SectionTitle>
@@ -123,7 +118,6 @@ const Projects = () => {
                 <li>Animated transitions using Framer Motion</li>
                 <li>Responsive design across different screen size</li>
                 <li>Project detail pages with routing</li>
-                <li>Blog system with Tiptap-based rich text editor</li>
               </ul>
             </S.ProjectDetails>
             <Link to={"portfolio2025"}>For more</Link>
