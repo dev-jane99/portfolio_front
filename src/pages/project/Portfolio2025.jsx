@@ -100,8 +100,8 @@ const Portfolio2025 = () => {
         <S.ProjectDetailsGrid>
           <S.DetailCard>
             <S.DetailLabel>Duration</S.DetailLabel>
-            <S.DetailValue>2025.07 - 2025.11</S.DetailValue>
-            <S.DetailSubtext>5 months • Personal Project</S.DetailSubtext>
+            <S.DetailValue>2025.04 - 2025.11</S.DetailValue>
+            <S.DetailSubtext>8 months • Personal Project</S.DetailSubtext>
           </S.DetailCard>
           
           <S.DetailCard>
