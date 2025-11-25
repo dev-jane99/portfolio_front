@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <S.ProjectContainer>
+  <S.ProjectContainer>
+      {/* Project Item 1: POWPOW */}
       <S.ProjectItem>
         <S.ProjectBackground>
           <S.Thumbnail src="/assets/powpow/powpow_logo.svg" alt="POWPOW logo" />
@@ -47,6 +48,7 @@ const Projects = () => {
       </S.ProjectItem>
 
       
+      {/* Project Item 2: COOING */}
       <S.ProjectItem>
         <S.ProjectBackground>
           <S.Thumbnail src="/assets/cooing/cooinglogo.svg" alt="COOING logo" />
@@ -90,6 +92,7 @@ const Projects = () => {
       </S.ProjectItem>
 
       
+      {/* Project Item 3: JANE Portfolio */}
       <S.ProjectItem>
         <S.ProjectBackground>
           <S.Thumbnail src="/assets/logo.svg" alt="Project logo" />

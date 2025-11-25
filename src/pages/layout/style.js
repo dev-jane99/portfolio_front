@@ -33,7 +33,7 @@ S.Header = styled.header`
     box-sizing: border-box; 
     transition: all 0.3s ease-in-out;
     
-    @media (max-width: 1200px) {
+    @media (max-width: 1024px) {
         flex-direction: column;
         gap: 15px;
     }
