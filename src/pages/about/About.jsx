@@ -16,7 +16,7 @@ const About = () => {
       <S.MainContainer>
         <S.IntroContainer>
           <h1>I'm Jane Ryo</h1>
-          <h2>Junior Web Developer</h2>
+          {/* <h2>Junior Web Developer</h2> */}
           <span><strong>Born in</strong> Korea</span>
           <span><strong>Studied in</strong> Ireland & The Netherlands</span>
           <span><strong>Worked in</strong> New York</span>
