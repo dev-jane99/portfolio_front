@@ -94,11 +94,11 @@ const About = () => {
                   Led a team of 7 to build a pet-themed ecommerce platform with a personalized test, managing planning, development, and deployment.
                 </li>
                 <li><strong>Full-Stack Developer @ COOING</strong><br />
-                  <strong>Duration: 04.2025 - progressing</strong><br />
+                  <strong>Duration: 04.2025 - 07.2025</strong><br />
                   Designing and building a full-stack workshop reservation and ecommerce platform.
                 </li>
                 <li><strong>Full-Stack Developer @ WEB-PORTFOLIO</strong><br />
-                  <strong>Duration: 04.2025 - progressing</strong><br />
+                  <strong>Duration: 04.2025 - 11.2025</strong><br />
                   Designing and building a personal web-portfolio.
                 </li>
               </ul>
