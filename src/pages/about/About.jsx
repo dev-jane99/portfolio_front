@@ -20,6 +20,7 @@ const About = () => {
           <span><strong>Born in</strong> Korea</span>
           <span><strong>Studied in</strong> Ireland & The Netherlands</span>
           <span><strong>Worked in</strong> New York</span>
+          <span><strong>Living in</strong> Japan</span>
         </S.IntroContainer>
 
         <S.ContentContainer>
